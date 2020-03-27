@@ -350,8 +350,15 @@ figure {
   top: 5px;
   color: white;
 }
-/* desktop first empezar desde el MQ más grander */
-@media screen and (max-width: 1024px) {
+/* desktop first empezar desde el MQ más grand
+er */
+@media screen and (max-width: 1023px) {
+  .event-list-title {
+    margin-left: 0;
+  }
+  .portfolio {
+    padding: 0;
+  }
   .container {
     padding: 0 1em;
   }
@@ -376,6 +383,10 @@ figure {
   }
 }
 @media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
   .burger-button {
     display: block;
   }
@@ -461,7 +472,7 @@ figure {
   }
   .project-details {
     width: auto;
-    font-size: 12px;
+    font-size: 1em;
   }
   .event-detail {
     margin: -2em .5em .5em;
@@ -483,6 +494,10 @@ figure {
     display: block;
     text-align: center;
     border: 1px solid transparent;
+  }
+  .social-link {
+    width: 40px;
+    height: 40px;
   }
 }
 @media screen and (max-width: 320px) {
